@@ -1,0 +1,78 @@
+@keyframes sk{
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: 1300px;
+    }
+}
+body{
+    position: relative;
+    padding-top: 620px;
+    background:url(./road.jpeg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: 0px;
+    
+    overflow: hidden;
+    animation: sk 3s linear infinite ;
+}
+
+@keyframes s{
+    0%{
+        right: -10%;
+    }
+    100%{
+        right: 100%;
+    }
+}
+
+.car{
+    top: 280px;
+    position: absolute;
+    background: url(./2-removebg-preview.png) ;
+    width: 866px;
+    height: 288px;
+    right: 25%;
+   /* animation: s 2s linear infinite; */
+}
+
+.tyre{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: black;
+    animation: tyre 1s linear infinite ;
+}
+
+@keyframes tyre{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.left{
+    position: absolute;
+    top: 55%;
+    left: 18%;
+}
+
+.right{
+    position: absolute;
+    top:55% ;
+    left: 70%;
+}
+
+.rim{
+    position: absolute;
+    top: 18%;
+    left: 22%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px rgb(81, 220, 238) dotted;
+   
+}
